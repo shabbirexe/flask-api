@@ -8,9 +8,9 @@ cors = CORS(app)
 app.config['CORS_HEADERS'] = 'application/json'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = '14174422'
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'flaskapp'
-# print(generate_password_hash("dff"))
+
 mysql = MySQL(app)
 @cross_origin
 @app.route('/signup',methods=['POST'])
